@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge Tracker</title>
+
+    <meta name="description"
+        content="Track your LeetCode and HackerRank coding challenges with CRUD operations and local storage.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Coding Challenge Tracker</h1>
+        <p>Manage your coding journey efficiently</p>
+    </header>
+
+    <main>
+
+        <!-- Add Challenge Section -->
+        <section class="form-section">
+
+            <h2>Add New Challenge</h2>
+
+            <form id="challengeForm">
+
+                <div class="form-group">
+                    <label for="problemName">Problem Name</label>
+                    <input
+                        type="text"
+                        id="problemName"
+                        placeholder="Enter problem name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="platform">Platform</label>
+                    <select id="platform" required>
+                        <option value="">Select Platform</option>
+                        <option value="LeetCode">LeetCode</option>
+                        <option value="HackerRank">HackerRank</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="difficulty">Difficulty</label>
+                    <select id="difficulty" required>
+                        <option value="">Select Difficulty</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add Challenge</button>
+
+            </form>
+
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filter-section">
+
+            <h2>Filter Challenges</h2>
+
+            <div class="filters">
+
+                <button id="allBtn">All</button>
+
+                <button id="solvedBtn">
+                    Solved
+                </button>
+
+                <button id="unsolvedBtn">
+                    Unsolved
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Challenge List -->
+        <section class="challenge-section">
+
+            <h2>My Challenges</h2>
+
+            <div id="challengeList">
+
+                <!-- Dynamic cards will be created by JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Challa Pradeep. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
