@@ -1,0 +1,216 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* ===========================
+   Filter Buttons
+=========================== */
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ===========================
+   Challenge Cards
+=========================== */
+
+#challengeList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.challenge-card {
+    background: #f8fafc;
+    border-left: 5px solid #2563eb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.challenge-card h3 {
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.challenge-card p {
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   Solved Card
+=========================== */
+
+.completed {
+    border-left: 5px solid #22c55e;
+    background: #ecfdf5;
+}
+
+.completed h3 {
+    text-decoration: line-through;
+}
+
+/* ===========================
+   Card Buttons
+=========================== */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.toggle-btn {
+    background: #16a34a;
+}
+
+.toggle-btn:hover {
+    background: #15803d;
+}
+
+.edit-btn {
+    background: #f59e0b;
+}
+
+.edit-btn:hover {
+    background: #d97706;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
