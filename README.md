@@ -64,11 +64,6 @@ coding-challenge-tracker/
 ├── script.js
 ├── README.md
 └── assets/
-    ├── home-page.png
-    ├── add-challenge.png
-    ├── solved-challenge.png
-    ├── unsolved-challenge.png
-    └── filter-options.png
 ```
 
 ---
@@ -94,25 +89,6 @@ coding-challenge-tracker/
 | Binary Search | LeetCode | Medium | Solved |
 | Valid Parentheses | LeetCode | Easy | Solved |
 | Climbing Stairs | LeetCode | Medium | Unsolved |
-
----
-
-## Screenshots
-
-### Home Page
-![Home Page](assets/home-page.png)
-
-### Add Challenge
-![Add Challenge](assets/add-challenge.png)
-
-### Solved Challenge
-![Solved Challenge](assets/solved-challenge.png)
-
-### Unsolved Challenge
-![Unsolved Challenge](assets/unsolved-challenge.png)
-
-### Filter Options
-![Filter Options](assets/filter-options.png)
 
 ---
 
